@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Brushify</title>
+</head>
+
+<body>
+    <center>
+        <h1 style="color: blueviolet;">Brushify</h1><br><br>
+        <div id="editor" contenteditable="true"></div><br><br>
+
+        <div id="second">
+            <div id="fnt-color">
+                <h2>Choose font color</h2>
+                <button class="color-btn" onclick="changeFontColor('red')" style="background-color: red;"></button>
+                <button class="color-btn" onclick="changeFontColor('blue')" style="background-color: blue;"></button>
+                <button class="color-btn" onclick="changeFontColor('green')" style="background-color: green;"></button>
+                <button class="color-btn" onclick="changeFontColor('yellow')"
+                    style="background-color: yellow;"></button>
+                <button class="color-btn" onclick="changeFontColor('black')" style="background-color: black;"></button>
+            </div>
+            <div id="fnt-backgroundcolor">
+                <h2>Choose background color</h2>
+                <button class="color-btn" onclick="changeBackgroundColor('red')"
+                    style="background-color: red;"></button>
+                <button class="color-btn" onclick="changeBackgroundColor('blue')"
+                    style="background-color: blue;"></button>
+                <button class="color-btn" onclick="changeBackgroundColor('green')"
+                    style="background-color: green;"></button>
+                <button class="color-btn" onclick="changeBackgroundColor('yellow')"
+                    style="background-color: yellow;"></button>
+                <button class="color-btn" onclick="changeBackgroundColor('black')"
+                    style="background-color: black;"></button>
+            </div>
+            <div id="fnt-style">
+                <h2>Choose font style</h2>
+                <button class="fnt-btn" onclick="changeFontFamily('cursive')" style="font-family: cursive;">Hello</button>
+                <button class="fnt-btn" onclick="changeFontFamily('serif')" style="font-family: serif;">Hello</button>
+                <button class="fnt-btn" onclick="changeFontFamily('sans-serif')" style="font-family: sans-serif;">Hello</button>
+                <button class="fnt-btn" onclick="changeFontFamily('monospace')" style="font-family: monospace;">Hello</button>
+                <button class="fnt-btn" onclick="changeFontFamily('fantasy')" style="font-family: fantasy;">Hello</button>
+            </div>
+        </div>
+
+
+
+    </center>
+
+
+    <script>
+        function changeFontColor(clr) {
+            document.getElementById('editor').style.color = clr;
+        }
+        function changeBackgroundColor(clr) {
+            document.getElementById('editor').style.backgroundColor = clr;
+        }
+        function changeFontFamily(fnt) {
+            document.getElementById('editor').style.fontFamily = fnt;
+        }
+    </script>
+</body>
+
+</html>
